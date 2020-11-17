@@ -1,0 +1,11 @@
+
+<h1>CITY</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input name="first" ngModel required #first="ngModel">
+  <button>Submit</button>
+</form>
+<ul *ngFor="let p of place">
+  <div class='card'>
+  <img src={{p.thumbnail.source}} alt=''/>
+  {{p.title}}</div>
+</ul>

@@ -1,0 +1,7 @@
+
+<h1>WEATHER</h1>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <input name="first" ngModel required #first="ngModel">
+  <button>Submit</button>
+</form>
+<h1>{{weather}}</h1>
